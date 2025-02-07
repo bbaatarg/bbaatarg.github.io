@@ -1,20 +1,273 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
-    span.s1 {font-kerning: none}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bayarbaatar Gonchigsuren - iOS Developer</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --background-color: #fff;
+            --section-spacing: 2rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: var(--section-spacing);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--primary-color);
+        }
+
+        section {
+            margin-bottom: var(--section-spacing);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .summary {
+            font-size: 1.1rem;
+            margin-bottom: var(--section-spacing);
+        }
+
+        .education-item, .experience-item, .project-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .education-item h3, .experience-item h3, .project-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .date-location {
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skills-category h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .awards-list {
+            list-style: none;
+        }
+
+        .awards-list li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .awards-list li::before {
+            content: "🏆";
+            position: absolute;
+            left: 0;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .skills-grid, .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-<p class="p1"><span class="s1">Hello Kadr!</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">It’s me Kazu :D</span></p>
+    <header>
+        <h1>BAYARBAATAR GONCHIGSUREN</h1>
+        <div class="contact-info">
+            <a href="mailto:bbaatarg@gmail.com">bbaatarg@gmail.com</a>
+            <span>+61-451 482882</span>
+            <span>Sydney, Australia</span>
+            <a href="https://www.linkedin.com/in/bbaatarg" target="_blank">LinkedIn</a>
+            <a href="https://github.com/bbaatarg" target="_blank">GitHub</a>
+            <a href="https://www.upwork.com/freelancers/~01a6d811d61347bd2d" target="_blank">Upwork</a>
+        </div>
+    </header>
+
+    <section class="summary">
+        <h2>PROFESSIONAL SUMMARY</h2>
+        <p>Accomplished Senior iOS Developer and former CTO with 13+ years of experience in mobile application development and technical leadership. Demonstrated expertise in scaling B2B/B2C platforms and leading cross-functional teams. Currently expanding into data science while maintaining a strong track record of successful remote collaborations with global clients across the USA, Indonesia, Armenia, and Turkey.</p>
+    </section>
+
+    <section class="education">
+        <h2>EDUCATION</h2>
+        <div class="education-item">
+            <h3>Master of Data Science</h3>
+            <div class="date-location">Macquarie University, Sydney, Australia | Expected: July 2027</div>
+            <p>Currently enrolled in English for Academic Purposes (EAP) program (Starting July 2025)</p>
+        </div>
+        <div class="education-item">
+            <h3>Bachelor of Software Engineering</h3>
+            <div class="date-location">Mongolian University of Science and Technology | 2013</div>
+            <p>Dean's List (2011-2013)</p>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>TECHNICAL EXPERTISE</h2>
+        <div class="skills-grid">
+            <div class="skills-category">
+                <h3>Development & Programming</h3>
+                <p>Swift, Objective-C, Dart (Flutter), UIKit, SwiftUI, CocoaTouch</p>
+            </div>
+            <div class="skills-category">
+                <h3>Software Architecture</h3>
+                <p>MVC, MVVM, VIPER, Clean Architecture</p>
+            </div>
+            <div class="skills-category">
+                <h3>Backend Technologies</h3>
+                <p>Firebase, RealmDB, SQLite, MongoDB, CoreData</p>
+            </div>
+            <div class="skills-category">
+                <h3>Cloud Services & Integration</h3>
+                <p>Google APIs, MapKit, Facebook SDKs, RevenueCat, AgoraSDK</p>
+            </div>
+            <div class="skills-category">
+                <h3>Development Tools</h3>
+                <p>GitHub, GitLab, Bitbucket, Xcode, Carthage, Cocoapods</p>
+            </div>
+            <div class="skills-category">
+                <h3>Design & UX</h3>
+                <p>Figma, Sketch, Adobe XD</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience">
+        <h2>PROFESSIONAL EXPERIENCE</h2>
+        <div class="experience-item">
+            <h3>Senior Mobile Developer</h3>
+            <div class="date-location">UBCab Holding LLC | April 2023 - Jan 2025 | Ulaanbaatar, Mongolia</div>
+            <ul>
+                <li>Implementation of real-time functionality using RabbitMQ and MongoDB-based REST APIs</li>
+                <li>Integration of Live Activities for enhanced user experience</li>
+                <li>Optimization of location services, resulting in 40% reduction in API calls</li>
+                <li>Achievement of 100% crash-free sessions through systematic code refactoring</li>
+                <li>Leadership of a two-person development team with established code review processes</li>
+            </ul>
+        </div>
+        <!-- Add other experience items similarly -->
+    </section>
+
+    <section class="projects">
+        <h2>NOTABLE PERSONAL PROJECTS</h2>
+        <div class="project-grid">
+            <div class="project-item">
+                <h3>ScanMe – Document Scanner</h3>
+                <div class="date-location">Nov 2022 – Mar 2023</div>
+                <ul>
+                    <li>OCR-powered auto-folder naming with high-resolution scanning capabilities</li>
+                    <li>Batch scanning functionality with custom image processing filters</li>
+                    <li>Multi-format export options (PDF, JPEG, TXT) with customizable quality settings</li>
+                    <li>Intuitive drag-and-drop interface for document management</li>
+                    <li>Advanced image enhancement using Core Image framework</li>
+                </ul>
+            </div>
+            <!-- Add other project items similarly -->
+        </div>
+    </section>
+
+    <section class="freelance">
+        <h2>FREELANCE PORTFOLIO (4.7+ ★ Rating)</h2>
+        <div class="project-grid">
+            <div class="project-item">
+                <h3>Cranium: Headache Diary</h3>
+                <div class="date-location">Jun 2023 – Jul 2023 | Client: Yerevan, Armenia</div>
+                <ul>
+                    <li>Implemented PDF export functionality using RxSwift and VIPER architecture</li>
+                    <li>Developed offline CoreData storage solution</li>
+                    <li>Achieved 4.8/5 client satisfaction rating</li>
+                </ul>
+            </div>
+            <!-- Add other freelance items similarly -->
+        </div>
+    </section>
+
+    <section class="awards">
+        <h2>AWARDS & RECOGNITION</h2>
+        <ul class="awards-list">
+            <li>Information Technology Leader of Mongolia (2024) - Ministry of Digital Development</li>
+            <li>Recognition for Teaching Mobile Development - MUST</li>
+            <li>Featured as 'Best Mindfulness App' by News.mn (Gegee App)</li>
+            <li>Conducted iOS development training at MUST (3 sessions)</li>
+        </ul>
+    </section>
+
+    <section class="languages">
+        <h2>LANGUAGES</h2>
+        <p>English (Conversational)</p>
+        <p>Mongolian (Native)</p>
+    </section>
 </body>
 </html>
