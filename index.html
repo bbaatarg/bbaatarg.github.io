@@ -4,225 +4,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bayarbaatar Gonchigsuren - iOS Developer</title>
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --text-color: #333;
-            --background-color: #fff;
-            --section-spacing: 2rem;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--background-color);
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: var(--section-spacing);
-        }
-
-        h1 {
-            color: var(--primary-color);
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            margin-bottom: 1rem;
-        }
-
-        .contact-info a {
-            color: var(--secondary-color);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .contact-info a:hover {
-            color: var(--primary-color);
-        }
-
-        section {
-            margin-bottom: var(--section-spacing);
-        }
-
-        h2 {
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--secondary-color);
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .summary {
-            font-size: 1.1rem;
-            margin-bottom: var(--section-spacing);
-        }
-
-        .education-item, .experience-item, .project-item {
-            margin-bottom: 1.5rem;
-        }
-
-        .education-item h3, .experience-item h3, .project-item h3 {
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-        }
-
-        .date-location {
-            color: var(--secondary-color);
-            font-size: 0.9rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .skills-category h3 {
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-        }
-
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .awards-list {
-            list-style: none;
-        }
-
-        .awards-list li {
-            margin-bottom: 0.5rem;
-            position: relative;
-            padding-left: 1.5rem;
-        }
-
-        .awards-list li::before {
-            content: "🏆";
-            position: absolute;
-            left: 0;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding: 1rem;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            .contact-info {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-
-            .skills-grid, .project-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>BAYARBAATAR GONCHIGSUREN</h1>
-        <div class="contact-info">
-            <a href="mailto:bbaatarg@gmail.com">bbaatarg@gmail.com</a>
-            <span>+61-451 482882</span>
-            <span>Sydney, Australia</span>
-            <a href="https://www.linkedin.com/in/bbaatarg" target="_blank">LinkedIn</a>
-            <a href="https://github.com/bbaatarg" target="_blank">GitHub</a>
-            <a href="https://www.upwork.com/freelancers/~01a6d811d61347bd2d" target="_blank">Upwork</a>
-        </div>
-    </header>
+    <div class="main-container">
+    <div class="left-column">
+        <header>
+            <div class="profile-container">
+                <div class="star-left"></div>
+                <div class="profile-image">
+                    <img src="assets/images/profile.jpg" alt="Bayarbaatar Gonchigsuren">
+                </div>
+                <div class="star-right"></div>
+            </div>
+            <h1>BAYARBAATAR GONCHIGSUREN</h1>
+            <div class="contact-info">
+                <a href="mailto:bbaatarg@gmail.com" class="contact-item">✉️ bbaatarg@gmail.com</a>
+                <a href="tel:+61451482882" class="contact-item">📞 +61-451 482882</a>
+                <span class="contact-item">📍 Sydney, Australia</span>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/bbaatarg" target="_blank" class="social-item">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                    </svg>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/bbaatarg" target="_blank" class="social-item">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                    </svg>
+                    GitHub
+                </a>
+                <a href="https://www.upwork.com/freelancers/~01a6d811d61347bd2d" target="_blank" class="social-item">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.546-1.405 0-2.543-1.14-2.543-2.546V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z"/>
+                    </svg>
+                    Upwork
+                </a>
+            </div>
+        </header>  
+    </div>
+    <div class="right-column">
+        <section class="summary">
+            <h2>About me</h2>
+            <p>Accomplished Senior iOS Developer and former CTO with 13+ years of experience in mobile application development and technical leadership. Demonstrated expertise in scaling B2B/B2C platforms and leading cross-functional teams. Currently expanding into data science while maintaining a strong track record of successful remote collaborations with global clients across the USA, Indonesia, Armenia, and Turkey.</p>
+        </section>
+    
+        <section class="education">
+            <h2>EDUCATION</h2>
+            <div class="education-container">
+                <div class="education-item">
+                    Master of Data Science • Macquarie University (Expected 2027)
+                </div>
+                
+                <div class="education-divider"></div>
+                
+                <div class="education-item">
+                    Bachelor of Software Engineering • Mongolian University of Science and Technology (2013)
+                </div>
+            </div>
+        </section>
+    
+        <section class="skills">
+            <h2>TECHNICAL EXPERTISE</h2>
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h3>Development & Programming</h3>
+                    <p>Swift, Objective-C, Dart (Flutter), UIKit, SwiftUI, CocoaTouch</p>
+                </div>
+                <div class="skills-category">
+                    <h3>Software Architecture</h3>
+                    <p>MVC, MVVM, VIPER architectures</p>
+                </div>
+                <div class="skills-category">
+                    <h3>Backend Technologies</h3>
+                    <p>Firebase, RealmDB, SQLite, MongoDB, CoreData</p>
+                </div>
+                <div class="skills-category">
+                    <h3>Cloud Services & Integration</h3>
+                    <p>AWS, Google APIs, MapKit, Facebook SDKs, RevenueCat, AgoraSDK</p>
+                </div>
+                <div class="skills-category">
+                    <h3>Development Tools</h3>
+                    <p>GitHub, GitLab, Bitbucket, Xcode, Carthage, Cocoapods</p>
+                </div>
+                <div class="skills-category">
+                    <h3>Design & UX</h3>
+                    <p>Figma, Sketch, Adobe XD</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="experience">
+            <h2>PROFESSIONAL EXPERIENCE</h2>
+            
+            <div class="experience-item">
+                <h3>Senior Mobile Developer</h3>
+                <div class="date-location">UBCab Holding LLC | April 2023 - Jan 2025 | Ulaanbaatar, Mongolia</div>
+                <ul>
+                    <li>Implementation of real-time functionality using RabbitMQ and MongoDB-based REST APIs</li>
+                    <li>Integration of Live Activities for enhanced user experience</li>
+                    <li>Optimization of location services, resulting in 40% reduction in API calls</li>
+                    <li>Achievement of 98% crash-free sessions through systematic code refactoring</li>
+                    <li>Leadership of a two-person development team with established code review processes</li>
+                </ul>
+            </div>
 
-    <section class="summary">
-        <h2>PROFESSIONAL SUMMARY</h2>
-        <p>Accomplished Senior iOS Developer and former CTO with 13+ years of experience in mobile application development and technical leadership. Demonstrated expertise in scaling B2B/B2C platforms and leading cross-functional teams. Currently expanding into data science while maintaining a strong track record of successful remote collaborations with global clients across the USA, Indonesia, Armenia, and Turkey.</p>
-    </section>
+            <div class="experience-item">
+                <h3>CTO & Senior iOS Developer</h3>
+                <div class="date-location">DELIVO TECHNOLOGIES LLC | April 2018 - April 2023</div>
+                <span>Spearheaded the development and growth of Mongolia's leading food delivery platform:</span>
+                <ul>
+                    <li>Scaled platform to support 100,000+ monthly active users</li>
+                    <li>Led and mentored a team of 10 developers across mobile and backend development</li>
+                    <li>Architected real-time tracking, loyalty programs, and payment systems</li>
+                    <li>Optimized performance with 400ms reduction in vendor list loading time</li>
+                    <li>Maintained 4.8/5 App Store rating through two major UI/UX overhauls</li>
+                </ul>
+            </div>
 
-    <section class="education">
-        <h2>EDUCATION</h2>
-        <div class="education-item">
-            <h3>Master of Data Science</h3>
-            <div class="date-location">Macquarie University, Sydney, Australia | Expected: July 2027</div>
-            <p>Currently enrolled in English for Academic Purposes (EAP) program (Starting July 2025)</p>
-        </div>
-        <div class="education-item">
-            <h3>Bachelor of Software Engineering</h3>
-            <div class="date-location">Mongolian University of Science and Technology | 2013</div>
-            <p>Dean's List (2011-2013)</p>
-        </div>
-    </section>
+            <div class="experience-item">
+                <h3>iOS Developer</h3>
+                <div class="date-location">UNIMEDIA INC. | July 2013 - April 2018</div>
+                <ul>
+                    <li>Optimized B2B name card management system, reducing processing time by 87%</li>
+                    <li>Mentored junior developers and established coding standards</li>
+                    <li>Implemented native ML-based card detection and offline support</li>
+                    <li>Received special award at Unimedia App Contest 2013</li>
+                </ul>
+            </div>
 
-    <section class="skills">
-        <h2>TECHNICAL EXPERTISE</h2>
-        <div class="skills-grid">
-            <div class="skills-category">
-                <h3>Development & Programming</h3>
-                <p>Swift, Objective-C, Dart (Flutter), UIKit, SwiftUI, CocoaTouch</p>
+            <div class="experience-item">
+                <h3>iOS Developer</h3>
+                <div class="date-location">MEZORN LLC | September 2010 - July 2013</div>
+                <ul>
+                    <li>Developed government statistical applications and parliament member tracking system</li>
+                    <li>Implemented real-time socket communication for legislative data</li>
+                </ul>
             </div>
-            <div class="skills-category">
-                <h3>Software Architecture</h3>
-                <p>MVC, MVVM, VIPER, Clean Architecture</p>
+        </section>
+    
+        <section class="projects">
+            <h2>PERSONAL PROJECTS</h2>
+            <div class="project-item">
+                <h3>Gegee – Mindfulness Meditation App</h3>
+                <div class="date-location">Jan 2021 – Present</div>
+                <span>Mongolia's first psychology-based meditation application:</span>
+                <ul>
+                    <li>Integration with Apple Health for comprehensive session tracking</li>
+                    <li>Daily reminder system with streak tracking functionality</li>
+                    <li>Custom-designed Dark/Light mode UI/UX with fluid animations</li>
+                    <li>Local payment integration (QPay.mn) for premium features</li>
+                </ul>
             </div>
-            <div class="skills-category">
-                <h3>Backend Technologies</h3>
-                <p>Firebase, RealmDB, SQLite, MongoDB, CoreData</p>
-            </div>
-            <div class="skills-category">
-                <h3>Cloud Services & Integration</h3>
-                <p>Google APIs, MapKit, Facebook SDKs, RevenueCat, AgoraSDK</p>
-            </div>
-            <div class="skills-category">
-                <h3>Development Tools</h3>
-                <p>GitHub, GitLab, Bitbucket, Xcode, Carthage, Cocoapods</p>
-            </div>
-            <div class="skills-category">
-                <h3>Design & UX</h3>
-                <p>Figma, Sketch, Adobe XD</p>
-            </div>
-        </div>
-    </section>
 
-    <section class="experience">
-        <h2>PROFESSIONAL EXPERIENCE</h2>
-        <div class="experience-item">
-            <h3>Senior Mobile Developer</h3>
-            <div class="date-location">UBCab Holding LLC | April 2023 - Jan 2025 | Ulaanbaatar, Mongolia</div>
-            <ul>
-                <li>Implementation of real-time functionality using RabbitMQ and MongoDB-based REST APIs</li>
-                <li>Integration of Live Activities for enhanced user experience</li>
-                <li>Optimization of location services, resulting in 40% reduction in API calls</li>
-                <li>Achievement of 100% crash-free sessions through systematic code refactoring</li>
-                <li>Leadership of a two-person development team with established code review processes</li>
-            </ul>
-        </div>
-        <!-- Add other experience items similarly -->
-    </section>
-
-    <section class="projects">
-        <h2>NOTABLE PERSONAL PROJECTS</h2>
-        <div class="project-grid">
             <div class="project-item">
                 <h3>ScanMe – Document Scanner</h3>
                 <div class="date-location">Nov 2022 – Mar 2023</div>
@@ -234,40 +170,91 @@
                     <li>Advanced image enhancement using Core Image framework</li>
                 </ul>
             </div>
-            <!-- Add other project items similarly -->
-        </div>
-    </section>
 
-    <section class="freelance">
-        <h2>FREELANCE PORTFOLIO (4.7+ ★ Rating)</h2>
-        <div class="project-grid">
+            <div class="project-item">
+                <h3>Lenzy – Snapchat Lens Saver</h3>
+                <div class="date-location">Jan 2021 - July 2021</div>
+                <span>Social media utility application featuring:</span>
+                <ul>
+                    <li>SSO authentication for streamlined user experience</li>
+                    <li>RevenueCat subscription integration with multiple tiers</li>
+                    <li>Action Extensions for Safari integration</li>
+                    <li>Social sharing capabilities</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3>DocScan – OCR Document Scanner</h3>
+                <div class="date-location">Jan 2014 – Jan 2015</div>
+                <span>Professional document digitization tool incorporating:</span>
+                <ul>
+                    <li>CoreImage processing for superior document quality</li>
+                    <li>Tesseract OCR integration for text recognition</li>
+                    <li>Real-time auto rectangle detection by native framework</li>
+                </ul>
+            </div>
+        </section>
+    
+        <section class="freelance">
+            <h2>REMOTE UPWORK JOBS</h2>
+            
             <div class="project-item">
                 <h3>Cranium: Headache Diary</h3>
                 <div class="date-location">Jun 2023 – Jul 2023 | Client: Yerevan, Armenia</div>
                 <ul>
                     <li>Implemented PDF export functionality using RxSwift and VIPER architecture</li>
-                    <li>Developed offline CoreData storage solution</li>
+                    <li>Developed offline CoreData storage solution with sync capabilities</li>
+                    <li>Integrated HealthKit for comprehensive health data tracking</li>
                     <li>Achieved 4.8/5 client satisfaction rating</li>
                 </ul>
             </div>
-            <!-- Add other freelance items similarly -->
-        </div>
-    </section>
 
-    <section class="awards">
-        <h2>AWARDS & RECOGNITION</h2>
-        <ul class="awards-list">
-            <li>Information Technology Leader of Mongolia (2024) - Ministry of Digital Development</li>
-            <li>Recognition for Teaching Mobile Development - MUST</li>
-            <li>Featured as 'Best Mindfulness App' by News.mn (Gegee App)</li>
-            <li>Conducted iOS development training at MUST (3 sessions)</li>
-        </ul>
-    </section>
+            <div class="project-item">
+                <h3>RevenueCat Integration</h3>
+                <div class="date-location">Jun 2023 | Client: Istanbul, Turkey</div>
+                <ul>
+                    <li>Successfully migrated StoreKit to RevenueCat</li>
+                    <li>Implemented Superwall for dynamic paywall management</li>
+                    <li>Received 4.7/5 client rating</li>
+                </ul>
+            </div>
 
-    <section class="languages">
-        <h2>LANGUAGES</h2>
-        <p>English (Conversational)</p>
-        <p>Mongolian (Native)</p>
-    </section>
+            <div class="project-item">
+                <h3>Renticator – Rental Platform</h3>
+                <div class="date-location">Feb 2017 – Aug 2017 | Client: Los Angeles, USA</div>
+                <ul>
+                    <li>Developed comprehensive rental network platform</li>
+                    <li>Integrated multiple payment gateways (Stripe, PayPal)</li>
+                    <li>Implemented community features and verification system</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3>Logitrips – Car Rental System</h3>
+                <div class="date-location">Jan 2013 – Jan 2014 | Client: Bali, Indonesia</div>
+                <ul>
+                    <li>Built peer-to-peer car-sharing marketplace</li>
+                    <li>Integrated PayPal payments and messaging functionality</li>
+                    <li>Implemented chat system between customer and driver</li>
+                </ul>
+            </div>
+        </section>
+    
+        <section class="awards">
+            <h2>AWARDS & RECOGNITION</h2>
+            <ul class="awards-list">
+                <li>Information Technology Leader of Mongolia (2024) - Ministry of Digital Development</li>
+                <li>Recognition for Teaching Mobile Development for students after class - MUST</li>
+                <li>Featured as 'Best Mindfulness App' by News.mn (Gegee App)</li>
+            </ul>
+        </section>
+    
+        <section class="languages">
+            <h2>LANGUAGES</h2>
+            <p>English (Conversational)</p>
+            <p>Mongolian (Native)</p>
+        </section>
+    </div>
+</div>
 </body>
 </html>
