@@ -3,6 +3,7 @@
     --secondary-color: #3498db;
     --text-color: #333;
     --background-color: #fff;
+    --border-color: #f2f2f2;
     --section-spacing: 2rem;
     --heading-font: 'Poppins', sans-serif;
     --body-font: 'Inter', sans-serif;
@@ -179,11 +180,17 @@ h2::after {
 }
 
 .date-location {
-    font-family: var(--heading-font);
-    font-weight: 500;
-    color: var(--secondary-color);
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.company-logo {
+    width: 20px;
+    height: 20px;
+    border-radius: 25%;
+    object-fit: contain;
+    border: 1px solid var(--border-color);
 }
 
 .skills-grid {
@@ -232,7 +239,7 @@ h2::after {
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
-    border: 4px solid var(--primary-color);
+    border: 6px solid var(--text-color);
 }
 
 .profile-image img {
@@ -393,4 +400,56 @@ h2::after {
     .education-date {
         font-size: 0.85rem;
     }
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.project-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+}
+
+.project-header h3 {
+    margin: 0;
+}
+
+.project-header .date-location {
+    margin-top: -6px;
+}
+
+.company-info {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    margin: 0.5rem 0;
+    line-height: 1.5;
+    padding: 5px 0;
+}
+
+.company-link {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.company-link:hover {
+    color: var(--primary-color);
+}
+
+ul {
+    list-style-type: disc; /* Use disc bullets */
+    padding-left: 12px; /* Add some padding to the left */
+}
+
+ul li {
+    font-size: 0.9rem; /* Make the font size smaller */
+    color: rgba(0, 0, 0, 0.7); /* Make the text color lighter */
+    line-height: 1.4; /* Adjust line height for better spacing */
 }
