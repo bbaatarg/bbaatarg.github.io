@@ -443,6 +443,48 @@ h2::after {
     color: var(--primary-color);
 }
 
+.screenshot-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Space between images */
+    justify-content: center; /* Center images */
+}
+
+.screenshot {
+    max-width: 100%; /* Responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+.project-screenshot {
+    text-align: center; /* Center the caption */
+    margin-bottom: 1.5rem; /* Space below each project */
+}
+
+.project-screenshot figcaption {
+    font-size: 0.9rem; /* Smaller font size for the caption */
+    color: rgba(0, 0, 0, 0.7); /* Lighter color for the caption */
+    margin-top: 0.5rem; /* Space above the caption */
+}
+
+.project-name {
+    text-decoration: none;
+    color: var(--text-color);
+    text-align: left; /* Left-align the project name */
+    font-size: 1.2rem; /* Текстийн хэмжээг томсгосон */
+    transition: color 0.3s ease;
+}
+
+.project-name-container {
+    text-align: left; /* Зүүн тийш нь байрлуулсан */
+}
+
+@media (max-width: 768px) {
+    .project-name-container {
+        text-align: center; /* Мобайл дээр текстийг төвлөрүүлсэн */
+    }
+}
+
 ul {
     list-style-type: disc; /* Use disc bullets */
     padding-left: 12px; /* Add some padding to the left */
